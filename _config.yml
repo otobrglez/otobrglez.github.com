@@ -1,0 +1,20 @@
+safe: true
+# source: <your pages repo>
+# destination: <the build dir>
+lsi: false
+pygments: true
+auto: true
+
+permalink: /:categories/:year/:month/:day/:title
+exclude: [".rvmrc", ".git"]
+
+
+title: Oto Brglez
+
+author :
+  name : Oto Brglez
+  email : otobrglez@gmail.com
+  github : otobrglez
+  twitter : otobrglez
+
+production_url : http://otobrglez.github.com
