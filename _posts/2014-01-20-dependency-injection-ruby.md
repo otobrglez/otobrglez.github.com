@@ -73,5 +73,5 @@ end
 To find more about dependency injection I suggest that you also look int this resources:
 
 - [Wikipedia - Dependency Injection](http://en.wikipedia.org/wiki/Dependency_injection)
-- [stackoverflow - What is dependency injection?](http://stackoverflow.com/questions/130794/what-is-dependency-injection)
+- [Stackoverflow - What is dependency injection?](http://stackoverflow.com/questions/130794/what-is-dependency-injection)
 - [Kresimir Bojcic - Dependency Injection In Ruby](http://kresimirbojcic.com/2011/11/19/dependency-injection-in-ruby.html)
