@@ -1,3 +1,5 @@
 name: Oto Brglez
 markdown: redcarpet
 pygments: true
+safe: true
+lsi: false
