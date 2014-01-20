@@ -2,6 +2,7 @@
 layout: post
 title:  "Snow conditions in Slovenia"
 date:   2014-01-19 12:00:00
+comments: true
 categories: hacking
 ---
 
