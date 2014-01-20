@@ -1,3 +1,43 @@
-<p><a href="/">Oto Brglez and his place @ GitHub.</a></p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
 
-{{ content }}
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+          {{ content }}
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Oto Brglez<br />
+                Web Architect / CTO @ Fika, Inc.
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/otobrglez">github.com/otobrglez</a><br />
+                <a href="https://twitter.com/otobrglez">twitter.com/otobrglez</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
