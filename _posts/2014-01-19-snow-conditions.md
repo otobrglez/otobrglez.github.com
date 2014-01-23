@@ -4,6 +4,8 @@ title:  "Snow conditions in Slovenia"
 date:   2014-01-19 12:00:00
 comments: true
 categories: hacking
+image: /images/001-pushover.png
+
 ---
 
 Since the winter is here and snow season is about to open in Slovenia I wanted to create a little project that would notify me when [Slovenian Environment Agency (ARSO)][arso] publishes new so called "snow report".

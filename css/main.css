@@ -1,40 +1,143 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Signika:300,400,700);
 
-/* Global Reset */
 * {
   margin: 0;
   padding: 0;
 }
 
-html, body { height: 100%; }
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
 
 body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
+  font-family: "Signika", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+/*  line-height: 18px;
+*/  font-weight: 300;
+}
+
+body {
   padding: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+  margin: 0px;
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 
-h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a         { color: #CC333F; }
+a:hover   { color: #EB6841; }
 
-/*****************************************************************************/
+h1 a{
+  text-decoration: none;
+}
+
+.wrap {
+  margin: 0px auto;
+  max-width: 900px;
+}
+
+
+.header {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.header a{
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 50px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #666;
+  display: inline-block;
+}
+
+.header .title {
+
+}
+
+.header a.logo{
+  background-color: #CC333F;
+  display: inline-block;
+  background-image: url('https://graph.facebook.com/oto.brglez/picture?type=square&height=200');
+  background-size: 50px;
+  background-position: left top;
+  height: 50px;
+  line-height: 50px;
+  background-repeat: no-repeat;
+  padding-left: 60px;
+  color: white;
+  text-decoration: none;
+}
+
+.posts-wrap {
+
+}
+
+.posts-wrap .posts {
+
+}
+
+.posts-wrap ul, .posts-wrap li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.post-single .post,
+.posts-wrap .posts .post {
+  min-height: 70px;
+  margin-bottom: 10px;
+}
+
+.post-single h1,
+.posts-wrap h1 {
+  margin: 0px;
+}
+
+.post-single h1 a,
+.posts-wrap h1 a{
+  color: #000;
+}
+
+.post-single .details,
+.post .details {
+  color: #666;
+  font-size: 16px;
+}
+
+
+.title-wrap {
+  position: relative;
+  padding-left: 60px;
+}
+
+.title-wrap .thumb{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.title-wrap .thumb img{
+  width: 50px;
+}
+
+
+.footer{
+  border-top: 2px solid #EEE;
+  margin-top: 60px;
+  padding-top: 20px;
+}
+
 /*
-/* Home
-/*
-/*****************************************************************************/
 .posts {
   list-style-type: none;
   margin-bottom: 2em;
@@ -46,22 +149,11 @@ a:visited { color: #a0a; }
 
 .posts span {
   color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
 }
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
 
 .site {
   font-size: 115%;
   text-align: justify;
-  /* width: 42em; */
-
-  /*margin: 3em auto 2em;*/
   margin: 0 auto;
   max-width: 600px;
   line-height: 1.5em;
@@ -124,19 +216,14 @@ a:visited { color: #a0a; }
 .footer .rss img {
   border: 0;
 }
+*/
 
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-/* standard */
 .post pre {
   border: 1px solid #ddd;
-  background-color: #eef;
+  background-color: #F2F2F2;
   padding: 0 .4em;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .post ul, .post ol {
@@ -145,7 +232,7 @@ a:visited { color: #a0a; }
 
 .post code {
   border: 1px solid #ddd;
-  background-color: #eef;
+  background-color: #F2F2F2;
   padding: 0 .2em;
 }
 
@@ -153,7 +240,6 @@ a:visited { color: #a0a; }
   border: none;
 }
 
-/* terminal */
 .post pre.terminal {
   border: 1px solid #000;
   background-color: #333;
@@ -163,3 +249,4 @@ a:visited { color: #a0a; }
 .post pre.terminal code {
   background-color: #333;
 }
+

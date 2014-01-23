@@ -1,8 +1,24 @@
 ---
-layout: default
+layout: single_post
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+
+<div class="post-single">
+    <div class="title-wrap">
+        <h1>{{ page.title }}</h1>
+
+        <div class="thumb">
+          <img src="{{ page.image }}"/>
+        </div>
+
+        <div class="details">
+          <span class="date">{{ page.date | date_to_string }}</span>
+          /
+          {{ page.categories }}
+        </div>
+    </div>
+</div>
+
+
 
 <div class="post">
   {{ content }}

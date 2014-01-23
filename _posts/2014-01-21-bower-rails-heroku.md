@@ -4,23 +4,24 @@ title:  "Bower + Rails on Heroku and S3"
 date:   2014-01-21 12:00:00
 comments: true
 categories: rails
+image: /images/003-bower.png
 ---
 
 My recent project is single-page application that has front-end build with [Marionette.js](http://marionettejs.com/) and back-end written in [Ruby on Rails](http://rubyonrails.org/). Since I want to use top front-end packages, as easy as possible I used "new" package manager for front-end called Bower.
 
-# Enter Bower
+## Enter Bower
 
 [Bower](http://bower.io/) is front-end package management system, written in JavaScript and it uses [Node](http://nodejs.org/) and [npm](https://npmjs.org/) in its base. Packages are managed via Git and you can use any type of transport with it (AMD, CommonJS,...)
 
 Visit [Bower](http://bower.io/) to learn more about and [browse packages](http://sindresorhus.com/bower-components/).
 
-# Pre-requirements
+## Pre-requirements
 
 - Install [Node](http://nodejs.org/) and [npm](https://npmjs.org/)
 - Install [Ruby](https://www.ruby-lang.org/en/) & [Rails](http://rubyonrails.org/)
 - Regular setup of your Heroku instance
 
-# Setup
+## Setup
 
 1. Update your ```Gemfile``` with ```execjs``` and ```asset_sync```.
 
@@ -131,7 +132,7 @@ Visit [Bower](http://bower.io/) to learn more about and [browse packages](http:/
   https://github.com/heroku/heroku-buildpack-ruby
   ```
 
-# Summary
+## Summary
 
 If everything is configured correctly only thing that you should do when you want to deploy is
 

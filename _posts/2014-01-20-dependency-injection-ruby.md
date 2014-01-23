@@ -4,9 +4,10 @@ title:  "Practical example of dependency injection in Ruby"
 date:   2014-01-20 12:00:00
 comments: true
 categories: hacking
+image: /images/002-di-ruby.png
 ---
 
-Today while working on my next great and amaizing project I used programming pattern something called dependency injection.
+Today while working on my next great and amaizing project I used programming pattern called dependency injection.
 
 Dependency injection is software design pattern that allows the removal of hard-coded dependencies and makes it possible to change them in "run-time" or "compile time".
 
