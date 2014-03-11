@@ -13,7 +13,7 @@ Yesterday I visited old collage of mine who is working with his team at little s
 
 If you don't have any request to your Heroku instance it will go to "idle". Because of the [nature](https://devcenter.heroku.com/articles/dynos) how Heroku works, the app will be feeling really slow and sluggish. There are few ways that can solve this.
 
-1. One way is to scale your daynos, to at least 2. Simple. But you have to [pay for extra dayno](https://www.heroku.com/pricing).
+1. One way is to scale your dynos, to at least 2. Simple. But you have to [pay for extra dyno](https://www.heroku.com/pricing).
 
 2. Second way - and probably the cheapest - is to create another Heroku instance and put a simple script that would periodical trigger requests to your app. This will prevent your app from going into idle.
 
