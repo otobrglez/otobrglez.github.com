@@ -11,13 +11,15 @@ Yesterday I visited old collage of mine who is working with his team at little s
 
 ## Your app is "sleeping"?
 
-If you don't have any request to your Heroku instance it will go to "idle". Because of the [nature](https://devcenter.heroku.com/articles/dynos) how Heroku works, the app will be feeling really slow and sluggish. There are two easy ways you can do to solve this.
+If you don't have any request to your Heroku instance it will go to "idle". Because of the [nature](https://devcenter.heroku.com/articles/dynos) how Heroku works, the app will be feeling really slow and sluggish. There are few ways that can solve this.
 
 1. One way is to scale your daynos, to at least 2. Simple. But you have to [pay for extra dayno](https://www.heroku.com/pricing).
 
 2. Second way - and probably the cheapest - is to create another Heroku instance and put a simple script that would periodical trigger requests to your app. This will prevent your app from going into idle.
 
   I wrote a little Ruby app that does exactly that. Its called [dontdieonme](https://github.com/otobrglez/dontdieonme). To use it; create new Heroku instance, and push this code to it. Set environment variable ```URL_TO_GET``` and I also suggest that you add add Rollbar to project so that you can see if there is something wrong. Restart the instance. The app will trigger request every 2 minutes.
+
+3. **Update.** [Miha Rekar](http://mr.si/) also proposed 3rd way. Add [NewRelic](https://addons.heroku.com/newrelic) to your Heroku instance and configure [availability monitoring](https://docs.newrelic.com/docs/alerts/availability-monitoring). NewRelic will **ping** your app every 10 minutes or so.
 
 ## You are serving static assets from Heroku?
 
