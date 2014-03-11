@@ -64,15 +64,26 @@ h1 a{
 
 }
 
+.header {
+  position: relative;
+}
+
+.header span.bg-image{
+  background-image: url('https://graph.facebook.com/oto.brglez/picture?type=square&height=200');
+  background-size: auto 50px;
+  width: 50px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+
 .header a.logo{
   background-color: #CC333F;
   display: inline-block;
-  background-image: url('https://graph.facebook.com/oto.brglez/picture?type=square&height=200');
-  background-size: 50px;
-  background-position: left top;
   height: 50px;
   line-height: 50px;
-  background-repeat: no-repeat;
   padding-left: 60px;
   color: white;
   text-decoration: none;
@@ -95,7 +106,7 @@ h1 a{
 .post-single .post,
 .posts-wrap .posts .post {
   min-height: 70px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .post-single h1,
