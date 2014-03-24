@@ -17,7 +17,7 @@ Take current item (blog post for example), and its properties that describe it t
 
 ![Jaccard Index - Wikipedia - Similarity](http://upload.wikimedia.org/math/1/8/6/186c7f4e83da32e889d606140fae25a0.png)
 
-Equation will give you number between 0 and 1. That mens that you can also easily calculate dissimilarity between items. That can be represented with this equation.
+Equation will give you number between 0 and 1. You can also easily calculate dissimilarity between items - represented with next equation.
 
 ![Jaccard Index - Wikipedia - Dissimilarity](http://upload.wikimedia.org/math/0/2/9/02906c47e0a08707ad6e35a6c34a43b4.png)
 
