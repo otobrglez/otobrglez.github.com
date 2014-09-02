@@ -19,7 +19,7 @@ Things that you have to understand before doing this thing.
 
 # Command-line client example
 
-This is example of working client, that you can use to download tracks from [SoundClound]. Its using official [Official SoundCloud API Wrapper for Ruby][sc-ruby], assumes that you are using Ruby 1.9.x..
+This is example of working client, that you can use to download tracks from [SoundCloud]. Its using official [Official SoundCloud API Wrapper for Ruby][sc-ruby], assumes that you are using Ruby 1.9.x..
 
     # We use Bundler to manage our dependencies
     require 'bundler/setup'
@@ -70,7 +70,7 @@ Also note that files are in [AIFF (Audio Interchange File Format)](http://www.di
 
     ffmpeg -i 293.aif final-293.mp3
 
-[SoundClound]: https://soundcloud.com/
+[SoundCloud]: https://soundcloud.com/
 [sc-ruby]: https://github.com/soundcloud/soundcloud-ruby
 [Sidekiq]: http://sidekiq.org/
 [ffmpeg]: https://www.ffmpeg.org/
