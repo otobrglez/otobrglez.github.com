@@ -96,4 +96,6 @@ And thats how you use Amazon SQS. ;)
 
 P.s.: This is code that I also wrote on [SO for someone](http://stackoverflow.com/questions/25567349/run-ruby-task-whenever-amazon-sqs-queue-is-updated).
 
+P.s.s.: Source code of example application can be found on [my GitHub](https://github.com/otobrglez/sinatra-amazon-sqs).
+
 [Sinatra]: http://www.sinatrarb.com/
