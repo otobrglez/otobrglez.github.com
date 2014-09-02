@@ -21,50 +21,52 @@ Things that you have to understand before doing this thing.
 
 This is example of working client, that you can use to download tracks from [SoundCloud]. Its using official [Official SoundCloud API Wrapper for Ruby][sc-ruby], assumes that you are using Ruby 1.9.x..
 
-    # We use Bundler to manage our dependencies
-    require 'bundler/setup'
+```ruby
+# We use Bundler to manage our dependencies
+require 'bundler/setup'
 
-    # We store SC_CLIENT_ID and SC_CLIENT_SECRET in .env
-    # and dotenv gem loads that for us
-    require 'dotenv'; Dotenv.load
+# We store SC_CLIENT_ID and SC_CLIENT_SECRET in .env
+# and dotenv gem loads that for us
+require 'dotenv'; Dotenv.load
 
-    require 'soundcloud'
-    require 'open-uri'
+require 'soundcloud'
+require 'open-uri'
 
-    # Ruby 1.9.x has a problem with following redirects so we use this
-    # "monkey-patch" gem to fix that. Not needed in Ruby >= 2.x
-    require 'open_uri_redirections'
-    
-    # First there is the authentication part.
-    client = SoundCloud.new(
-      client_id: ENV.fetch("SC_CLIENT_ID"),
-      client_secret: ENV.fetch("SC_CLIENT_SECRET")
-    )
-    
-    # Track URL, publicly visible...
-    track_url = "http://soundcloud.com/forss/flickermood"
-    
-    # We call SoundCloud API to resolve track url
-    track = client.get('/resolve', url: track_url)
-    
-    # If track is not downloadable, abort the process
-    unless track["downloadable"]
-      puts "You can't download this track!"
-      exit 1
-    end
-    
-    # We take track id, and we use that to name our local file
-    track_id = track.id
-    track_filename = "%s.aif" % track_id.to_s
-    download_url = "%s?client_id=%s" % [track.download_url, ENV.fetch("SC_CLIENT_ID")]
-    
-    File.open(track_filename, "wb") do |saved_file|
-      open(download_url, allow_redirections: :all) do |read_file|
-        saved_file.write(read_file.read)
-      end
-    end
-    
-    puts "Your track was saved to: #{track_filename}"
+# Ruby 1.9.x has a problem with following redirects so we use this
+# "monkey-patch" gem to fix that. Not needed in Ruby >= 2.x
+require 'open_uri_redirections'
+
+# First there is the authentication part.
+client = SoundCloud.new(
+  client_id: ENV.fetch("SC_CLIENT_ID"),
+  client_secret: ENV.fetch("SC_CLIENT_SECRET")
+)
+
+# Track URL, publicly visible...
+track_url = "http://soundcloud.com/forss/flickermood"
+
+# We call SoundCloud API to resolve track url
+track = client.get('/resolve', url: track_url)
+
+# If track is not downloadable, abort the process
+unless track["downloadable"]
+  puts "You can't download this track!"
+  exit 1
+end
+
+# We take track id, and we use that to name our local file
+track_id = track.id
+track_filename = "%s.aif" % track_id.to_s
+download_url = "%s?client_id=%s" % [track.download_url, ENV.fetch("SC_CLIENT_ID")]
+
+File.open(track_filename, "wb") do |saved_file|
+  open(download_url, allow_redirections: :all) do |read_file|
+    saved_file.write(read_file.read)
+  end
+end
+
+puts "Your track was saved to: #{track_filename}"
+```
 
 Also note that files are in [AIFF (Audio Interchange File Format)](http://www.digitalpreservation.gov/formats/fdd/fdd000005.shtml). To convert them to mp3 you do something like this with [ffmpeg].
 
