@@ -13,7 +13,7 @@ I came across a [StackOverflow question](http://stackoverflow.com/questions/2562
 
 Things that you have to understand before doing this thing.
 
- - Not every track on [SoundClound] can be downloaded! Only tracks that are flagged as **downloadable** can be downloaded - your code has to consider that option!
+ - Not every track on [SoundCloud] can be downloaded! Only tracks that are flagged as **downloadable** can be downloaded - your code has to consider that option!
  - Your track URL has to be "resolved" before you get to download_url and after you get download_url you have to use your client_id to get the final download URL.
  - Tracks can be big, and downlowding them requires time! You should never do tasks like this straight from your Rails app in your controller or model. If the tasks runs longer you always use some background worker or some other kind of background processing "thing" - [Sidekiq] for example.
 
