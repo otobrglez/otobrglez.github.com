@@ -141,6 +141,14 @@ h1 a{
   width: 50px;
 }
 
+.post .center-img {
+  text-align: center;
+}
+
+.post .center-img img{
+  width: 80%;
+  margin: 0px auto;
+}
 
 .footer{
   border-top: 2px solid #EEE;
