@@ -122,7 +122,7 @@ Thanks for reading. Please let me know if you feel that [Aloo] is the real deal,
 
 See you guys next year!
 
-P.s.: I'm also still waiting for the final results. You can [vote for Aloo here](railsrumble.com/entries/153-aloo-business-analytics-fast).
+P.s.: I'm also still waiting for the final results. You can [vote for Aloo here](http://railsrumble.com/entries/153-aloo-business-analytics-fast).
 
 [Heroku]:http://www.heroku.com/
 [Aloo]:http://www.aloo.io/
