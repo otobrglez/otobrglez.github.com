@@ -35,7 +35,7 @@ Sadly, idea was a bit too complex and a bit to specific to give me some exposure
 
 ## HumanLoan
 
-On October 24th I participated on [Startup Weekend FinTech London][swl], this is event where bunch of smart and passionate guys put their heads together and they build something that "might" be an actual startup by the end of weekend. I was in team with two business guys - [@nicoarrellaga](https://twitter.com/nicoarrellaga) and [@LarsMarkull](https://twitter.com/LarsMarkull). During the weekend we build prototype for [HumanLoan][hl]. On Friday we talked about the idea over a beer in classical English pub, on Saturday, I started wireframing / designing and actually coding. Guys ware digging and poking over business and doing research. Sunday was all about polishing the product, slides and making sure that judges will get it,...
+On October 24th I participated on [Startup Weekend FinTech London][swl], this is event where bunch of smart and passionate guys put their heads together and they build something that "might" be an actual startup by the end of weekend. I was in team with two business guys - [@nicoarrellaga](https://twitter.com/nicoarrellaga) and [@LarsMarkull](https://twitter.com/LarsMarkull). During the weekend we build prototype for [HumanLoan][hl]. On Friday we talked about the idea over a beer in classical English pub, on Saturday, I started wireframing / designing and actually coding. Guys were digging and poking over business and doing research. Sunday was all about polishing the product, slides and making sure that judges will get it,...
 
 <div class='center-img'>
   <a href="http://www.humanloan.com">
@@ -63,7 +63,7 @@ Last product of this month was updating page for my [business - opalab.com][opal
   </a>
 </div>
 
-I've asked [Reddit /r/ design_critiques](http://www.reddit.com/r/design_critiques/comments/2kgue7/website_developer_looking_for_web_design_feedback/) for some critique but most of improvements ware suggested by my friend [@dejanstokanic](https://twitter.com/dejanstokanic). I hope that the page gets idea to the people. Well.. Only time will tell. :)
+I've asked [Reddit /r/ design_critiques](http://www.reddit.com/r/design_critiques/comments/2kgue7/website_developer_looking_for_web_design_feedback/) for some critique but most of improvements were suggested by my friend [@dejanstokanic](https://twitter.com/dejanstokanic). I hope that the page gets idea to the people. Well.. Only time will tell. :)
 
 ## Summary
 
@@ -101,7 +101,7 @@ This is a general summary of all projects and time spent.
 </tbody>
 </table>
 
-All of projects ware fun. I learned few things that I didn't know before, I meet few really incredible people. And that is why I did it. ;) And how was your October?
+All of projects were fun. I learned few things that I didn't know before, I meet few really incredible people. And that is why I did it. ;) And how was your October?
 
 [hl]: http://www.humanloan.com
 [MUBI]: https://mubi.com
