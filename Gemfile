@@ -1,5 +1,4 @@
 source "https://rubygems.org"
 
-gem 'github-pages', github: 'github/pages-gem'
-gem "jekyll"
-gem "jekyll-utf8"
+gem 'github-pages', '~> 33'
+gem 'jekyll-sass', '~> 1.2'

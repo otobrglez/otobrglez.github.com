@@ -2,6 +2,6 @@ name: Oto Brglez
 description: Thoughts of hacker
 url: http://otobrglez.opalab.com
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 safe: true
 lsi: false
